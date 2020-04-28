@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-
+<div class="container text-center">
 <h1>Password Generator</h1>
 <br>
 <br>
 <form action="password">
+
     Lenght <select name="lenght">
         <option value="8">8</option>
         <option value="9">9</option>
@@ -24,15 +25,21 @@
     </select>
     <br>
     <br>
-    <input type="checkbox" name="Uppercase">Uppercase
-    <br>
-    <input type="checkbox" name="Numbers">Numbers
-    <br>
-    <input type="checkbox" name="SpecSymbols">Spec.Symbols
-    <br>
-    <br>
-    <input type="submit" value="Generate Password">
-</form>
 
+
+    <label><input type="checkbox" name="Uppercase">Uppercase</label>
+    <br>
+
+    <label><input type="checkbox" name="Numbers">Numbers</label>
+    <br>
+    <label><input type="checkbox" name="SpecSymbols">Spec.Symbols</label>
+
+
+
+    <br>
+    <br>
+    <input type="submit" value="Generate Password" class="btn btn-primary">
+</form>
+</div>
 </body>
 </html>
